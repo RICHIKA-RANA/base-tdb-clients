@@ -5,7 +5,7 @@ from contextlib import contextmanager
 
 GRAPH_DB = os.getenv("GRAPH_DB", "data/graphs.db")
 
-SQLITE_BUSY_TIMEOUT_MS = int(os.getenv("TDB_SQLITE_BUSY_TIMEOUT_MS", "5000"))
+SQLITE_BUSY_TIMEOUT_MS = int(os.getenv("TDB_SQLITE_BUSY_TIMEOUT_MS", "30000"))
 
 _thread_local = threading.local()
 
